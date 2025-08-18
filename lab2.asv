@@ -1,0 +1,13 @@
+img = imread('img1.jpg');
+figure;
+imshow(img);
+axis on;                     % Turn on axis display
+xlabel('X'); ylabel('Y');    % Label axes
+title('Image with X and Y Coordinates');
+
+
+cropped_face = img(0:110, 110:170, :);
+
+figure;
+imshow(cropped_face);
+title('Manually Cropped Face Region');
